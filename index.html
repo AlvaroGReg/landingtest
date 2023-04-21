@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lading page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+    <div class="txt">
+      <h1>Cómete un croissant</h1>
+      <p>
+        Pide tu croissant <br>
+        Te lo hacemos llegar por sms <br>
+        Delicioso jugoso increiblemente rico
+      </p>
+      <div class="formdiv">
+        <form onsubmit="setAction(this)">
+            <input class="textfield" type="tel" placeholder="Te lo mandamos por sms">
+            <input class="button" type="submit">
+        </form>
+      </div>
+    </div>
+
+    <div class="qr">
+        <img src="src/qr.png" alt="">
+
+        <p>Escanea el código QR <br> para que te mandemos EL croissant</p>
+    </div>
+
+      <img class="croissant" src="src/croissant.png" alt="" />
+    </main>
+  </body>
+  <script>
+    function setAction(form){
+        console.log(form);
+    }
+  </script>
+</html>
